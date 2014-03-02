@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Hangman</title>
+		<meta name="description" content="hangman">
+		<meta name="author" content="Evan Vandegriff">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<script src="js/libs/jquery-2.1.0.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>HTML</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div class="content">
+				<div class="hangman-container">
+					
+				</div>
+				
+				<div class="message-container">
+					<p class="message-display"></p>
+				</div>
+				
+				<div class="user-interaction-container">
+					<div class="word-input-container">
+						<label>Enter the word to be guessed : </label>
+						<input class="word-input" type="text" />
+						<button class="word-input-button">Start!</button>
+					</div>
+					
+					<div class="letter-input-container">
+						<label>Enter a letter : </label>
+						<input class="letter-input" type="text" />
+						<button class="letter-input-button">Guess!</button>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Evan Vandegriff
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

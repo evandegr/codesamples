@@ -1,0 +1,40 @@
+{
+  "name": "hangman",
+  "version": "0.0.0",
+  "description": "Play the game of hangman!",
+  "main": "(Gruntfile.js) ",
+  "scripts": {
+    "test": "/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evandegr/codesamples.git"
+  },
+  "keywords": [
+    "hangman"
+  ],
+  "author": "Evan Vandegriff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evandegr/codesamples/issues"
+  },
+  "homepage": "https://github.com/evandegr/codesamples",
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-uglify": "^0.3.3",
+    "path": "^0.4.9",
+    "open": "0.0.4",
+    "chokidar": "^0.6.3",
+    "async": "^0.2.10",
+    "ua-parser-js": "^0.6.2",
+    "lodash": "^1.3.1",
+    "portscanner": "^0.1.3",
+    "connect": "^2.8.8",
+    "cli-color": "^0.2.3",
+    "url": "^0.7.9",
+    "socket.io": "^0.9.16",
+    "grunt-style-injector": "^0.1.9"
+  }
+}
