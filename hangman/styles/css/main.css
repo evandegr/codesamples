@@ -1,0 +1,45 @@
+/* line 1, ../sass/main.scss */
+html, body, .content {
+  height: 90%;
+}
+
+/* line 5, ../sass/main.scss */
+.content {
+  width: 600px;
+  margin: 0 auto 80px auto;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  padding: 20px;
+  text-align: center;
+}
+/* line 12, ../sass/main.scss */
+.content h1 {
+  margin-top: 5px;
+}
+/* line 15, ../sass/main.scss */
+.content h3 {
+  display: none;
+}
+/* line 18, ../sass/main.scss */
+.content .letter-input-container {
+  display: none;
+}
+/* line 21, ../sass/main.scss */
+.content .hangman-letter {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 25, ../sass/main.scss */
+.content .hangman-letters, .content .missed-guesses {
+  font-size: 20px;
+}
+/* line 28, ../sass/main.scss */
+.content .missed-guesses {
+  margin-bottom: 20px;
+}
+/* line 31, ../sass/main.scss */
+.content .message-container {
+  width: auto;
+  height: 20px;
+  margin-bottom: 20px;
+}

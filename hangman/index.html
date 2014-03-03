@@ -17,53 +17,53 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
+		<link rel="stylesheet" type="text/css" href="styles/css/main.css">
+		
 		<script src="js/libs/jquery-2.1.0.min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 
 	<body>
-		<div>
-			<header>
-				<h1>HTML</h1>
-			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
-
-			<div class="content">
-				<div class="hangman-container">
-					
+		<div class="content">
+			<h1>HANGMAN</h1>
+			
+			<div class="hangman-container">
+				<button class="reset">Reset Game</button>
+				
+				<div class="hangman-picture-container">
+					<img class="hangman-picture" src="assets/images/Hangman-6.png" />
 				</div>
 				
-				<div class="message-container">
-					<p class="message-display"></p>
+				<h3>Word:</h3>
+				<div class="hangman-letters"></div>
+				
+				<h3>Missed Guesses:</h3>
+				<div class="missed-guesses"></div>
+			</div>
+			
+			<div class="message-container">
+				<p class="message-display"></p>
+			</div>
+			
+			<div class="user-interaction-container">
+				<div class="word-input-container">
+					<label>Enter the word to be guessed : </label>
+					<input class="word-input" type="text" />
+					<button class="word-input-button">Start!</button>
 				</div>
 				
-				<div class="user-interaction-container">
-					<div class="word-input-container">
-						<label>Enter the word to be guessed : </label>
-						<input class="word-input" type="text" />
-						<button class="word-input-button">Start!</button>
-					</div>
-					
-					<div class="letter-input-container">
-						<label>Enter a letter : </label>
-						<input class="letter-input" type="text" />
-						<button class="letter-input-button">Guess!</button>
-					</div>
+				<div class="letter-input-container">
+					<label>Enter a letter : </label>
+					<input class="letter-input" type="text" />
+					<button class="letter-input-button">Guess!</button>
 				</div>
 			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright  by Evan Vandegriff
-				</p>
-			</footer>
 		</div>
+
+		<footer>
+			<p>
+				&copy; Copyright  by Evan Vandegriff
+			</p>
+		</footer>
 	</body>
 </html>

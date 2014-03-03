@@ -1,0 +1,36 @@
+html, body, .content{
+  height:90%;
+}
+
+.content{
+  width:600px;
+  margin: 0 auto 80px auto;
+  border-left:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  padding:20px;
+  text-align:center;
+  h1{
+    margin-top:5px;
+  }
+  h3{
+    display:none;
+  }
+  .letter-input-container{
+    display:none;
+  }
+  .hangman-letter{
+    display:inline-block;
+    margin-right:10px;
+  }
+  .hangman-letters, .missed-guesses{
+    font-size:20px;
+  }
+  .missed-guesses{
+    margin-bottom:20px;
+  }
+  .message-container{
+    width:auto;
+    height:20px;
+    margin-bottom:20px;
+  }
+}
