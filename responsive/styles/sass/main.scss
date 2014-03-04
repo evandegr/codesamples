@@ -2,14 +2,45 @@ html, body, .content{
   height:100%;
 }
 
+body{
+  margin:0px;
+  padding:0px;
+}
+
 .content{
-  width:100%
+  width:100%;
+  margin-top:80px;
+  padding-top:20px;
 }
 
 .column{
   width:25%;
   float:left;
   min-width:105px;
+  height:400px;
+  margin-bottom:40px;
+  border-bottom:1px solid #CCCCCC;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  background-color:#ADADAD;
+  z-index:10;
+  padding-left:40px;
+}
+
+footer{
+  position:fixed;
+  width:100%;
+  bottom:0;
+  height:60px;
+  left:0;
+  background-color:#ADADAD;
+  z-index:10;
+  padding-left:40px;
 }
 
 .image{
@@ -54,4 +85,18 @@ html, body, .content{
   display: table-cell; 
   vertical-align: middle; 
   text-align: center; 
+}
+
+/* Smaller than 800; tablets, etc. */
+@media screen and (max-width: 800px) {
+  .column{
+    width:50%;
+  }
+}
+
+/* Smaller than 500; phones, etc. */
+@media screen and (max-width: 500px) {
+  .column{
+    width:100%;
+  }
 }

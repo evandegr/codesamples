@@ -28,27 +28,21 @@ module.exports = function(grunt) {
 	 			environment: 'production'
 	 		}
 	  	},
-   },
-   uglify: {
-	 	all: {
-	 		files: {
-	         	'js/min/main.min.js': [
-	         	'js/libs/jquery.js', 
-	         	'js/main.js'
-	         	]
-	     	}
-		},
-   },
-    // Tasks
+  },
+  cssmin : {
+            css:{
+                src: 'styles/css/main.css',
+                dest: 'styles/css/main.min.css'
+            }
+        }
    });
  
     // Load the plugin that provides the "uglify" task.
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-contrib-compass');
-   grunt.loadNpmTasks('grunt-contrib-uglify');
-
+   grunt.loadNpmTasks('grunt-contrib-cssmin');
  
    // Default task(s).
-   grunt.registerTask('default', ['compass:dev' , 'uglify' , 'watch']);
+   grunt.registerTask('default', ['compass:dev', 'watch', 'cssmin:css']);
  
 };

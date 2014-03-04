@@ -1,0 +1,27 @@
+Author : Evan Vandegriff
+
+Requirements:
+
+Create a responsive layout with the following properties:
+
+1) Fixed position header and footer which span the entire width of the page.
+2) 4 columns for desktop resolutions, 2 columns for portrait tablet, and 1 column for phone.
+3) Column 1 should contain an ordered list of 10 items with alternating background colors.
+4) Column 2 should contain a div with 5px rounded corners.
+5) Column 3 should contain a div with horizontally and vertically centered text which spans multiple lines.
+6) Column 4 should contain and image which takes up the full width of the column.
+7) Cross-browser compatible.  IE8+.  Graceful degradation where appropriate.
+
+This should represent production-ready code, so show us code you would be proud to deploy.
+Do not worry about the design looking pretty, we just want to see the code.
+
+Tested on Chrome, Firefox, Iphone 5, Galaxy S, iPad, IE8.
+
+Notes:
+
+- Build tool : grunt
+- CSS preprocessor : SASS
+- IE compatability tools : HTML5Shim and CSS3PIE
+- Desktop-first build. Since the mobile version only real difference is the columns, than I don't have to worry about other IE8
+issues involving media queries.
+- Simple approach to handle the columns : 4 columns = 25% width columns, 2 columns = 50%, and 1 column = 100%

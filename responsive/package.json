@@ -35,6 +35,7 @@
     "cli-color": "^0.2.3",
     "url": "^0.7.9",
     "socket.io": "^0.9.16",
-    "grunt-style-injector": "^0.1.9"
+    "grunt-style-injector": "^0.1.9",
+    "grunt-contrib-cssmin": "^0.9.0"
   }
 }
