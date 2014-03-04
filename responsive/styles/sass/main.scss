@@ -1,0 +1,57 @@
+html, body, .content{
+  height:100%;
+}
+
+.content{
+  width:100%
+}
+
+.column{
+  width:25%;
+  float:left;
+  min-width:105px;
+}
+
+.image{
+  width:100%;
+}
+
+.rounded{
+    border: 1px solid #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior : url('assets/PIE-1.0.0/PIE.htc');
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:10px;
+}
+
+.odd{
+  background-color:#5A9EE2;
+}
+
+.even{
+  background-color:#FFA64D;
+}
+
+.area { 
+  width: 100%; 
+  height: 300px; 
+  position: relative;
+  border:1px solid #CCCCCC;
+}
+
+.all-centered {
+  width: 100%; 
+  height: 100%; 
+  display: table; 
+}
+
+.all-centered p {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+}
