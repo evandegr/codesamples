@@ -32,13 +32,19 @@ module.exports = function(grunt) {
    uglify: {
 	 	all: {
 	 		files: {
-	         	'js/min/main.min.js': [
-	         	'js/libs/jquery.js', 
+	         	'js/main.min.js': [
+	         	'js/libs/jquery-2.1.0.min.js', 
 	         	'js/main.js'
 	         	]
 	     	}
 		},
    },
+   cssmin : {
+        css:{
+            src: 'styles/css/main.css',
+            dest: 'styles/css/main.min.css'
+        }
+   }
     // Tasks
    });
  
@@ -46,9 +52,9 @@ module.exports = function(grunt) {
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-contrib-compass');
    grunt.loadNpmTasks('grunt-contrib-uglify');
-
+   grunt.loadNpmTasks('grunt-contrib-cssmin');
  
    // Default task(s).
-   grunt.registerTask('default', ['compass:dev' , 'uglify' , 'watch']);
+   grunt.registerTask('default', ['compass:dev' , 'uglify' , 'watch', 'cssmin:css']);
  
 };

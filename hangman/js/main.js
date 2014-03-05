@@ -67,7 +67,13 @@ Hangman.prototype.init_event_handlers = function(){
 			else{
 				that.incorrect_guess(val);
 				that.clear_letter_input();
-				that.show_message('Incorrect Guess! You have ' + that.remaining_guesses + ' left!');
+				
+				if (that.remaining_guesses === 0){
+					that.trigger_loss();
+				}
+				else{
+					that.show_message('Incorrect Guess! You have ' + that.remaining_guesses + ' left!');
+				}
 			}
 		}
 		else{
@@ -90,10 +96,6 @@ Hangman.prototype.incorrect_guess = function(letter){
 	this.update_missed_guesses();
 	this.remaining_guesses--;
 	this.update_hangman_picture();
-	
-	if (this.remaining_guesses === 0){
-		this.trigger_loss();
-	}
 };
 
 Hangman.prototype.update_hangman_picture = function(){
@@ -103,6 +105,7 @@ Hangman.prototype.update_hangman_picture = function(){
 };
 
 Hangman.prototype.trigger_loss = function(){
+	this.$letter_input_container.hide();
 	this.show_message('You lost! The word was ' + this.word.join(''), true);
 };
 

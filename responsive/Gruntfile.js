@@ -30,11 +30,11 @@ module.exports = function(grunt) {
 	  	},
   },
   cssmin : {
-            css:{
-                src: 'styles/css/main.css',
-                dest: 'styles/css/main.min.css'
-            }
+        css:{
+            src: 'styles/css/main.css',
+            dest: 'styles/css/main.min.css'
         }
+  }
    });
  
     // Load the plugin that provides the "uglify" task.

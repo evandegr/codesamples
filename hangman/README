@@ -1,0 +1,28 @@
+Author : Evan Vandegriff
+
+Requirements:
+
+Using JS and HTML, create a version of the game Hangman (http://en.wikipedia.org/wiki/Hangman_(game)).
+The game can generally be implemented however you want but should adhere to the following:
+
+1) Start game by entering a word into a text box.
+2) Display an underscore for each letter of the word.
+3) Enter a letter guess into another textbox and submit by clicking a button.
+4) Whenever a correct guess is made, reveal the letter in the word by replacing the corresponding underscore.
+5) Whenever a wrong guess is made, draw another piece of the hangman.  To save time, you can just decrement a "Remaining Guesses" counter instead of actually drawing a hangman.
+6) If you guess the word display a "You win!" alert, otherwise display a "You lose!" alert.
+
+This should represent production-ready code, so show us code you would be proud to deploy.
+
+Notes:
+
+- Build tool : grunt
+- CSS preprocessor : SASS
+- Ideal browser : Chrome
+- Tried to keep things as simple as possible. One Hangman object seemed like all that was necessary here especially since there
+are no plans to extend this guy.
+- My strategy was to keep the state of the word in an array with correctly guessed letters being filled in and unguessed letters
+maintaining as '_'. So if someone had guessed a 'T' for the word 'TEST', the array would hold ['T', '_', '_', 'T']. This allowed
+me to easily iterate through that array to check for guesses with the real word array and compare on a char by char basis.
+- The rest is essentially manipulating the DOM, validation, and keeping the state of the game correct.
+- I didn't add a validation for someone who guesses the same letter twice.
